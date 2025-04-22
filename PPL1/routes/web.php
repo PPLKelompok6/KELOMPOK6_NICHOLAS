@@ -1,13 +1,13 @@
 <?php
 use App\Http\Controllers\JadwalController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\KonsultasiController;
+use App\Http\Controllers\ProfileDokterController;
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return redirect()->route('jadwal.index');
+})->name('home');
 
 
-Route::get('/jadwal', [JadwalController::class, 'index'])->name('jadwal');
+Route::get('/jadwal', [JadwalController::class, 'index'])->name('jadwal.index');
 
-Route::get('/kontak/{id}', [KonsultasiController::class, 'kontak'])->name('konsultasi.kontak');
+Route::get('/profileD/{id}', [ProfileDokterController::class, 'profileD'])->name('profileD.index');

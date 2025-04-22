@@ -10,17 +10,17 @@ class JadwalController extends Controller
 
     public function index()
     {
-        return view('jadwal', [
+        return view('jadwal.index', [
             'dokterUmum' => Dokter::where('spesialis', 'Dokter Umum')->get(),
             'dokterGigi' => Dokter::where('spesialis', 'Dokter Gigi')->get(),
-            'psikolog' => Dokter::where('spesialis', 'Psikolog')->get(),
+            'psikologi' => Dokter::where('spesialis', 'Psikologi')->get(),
             'dokterGigiSpesialis' => Dokter::where('spesialis', 'Dokter Gigi Spesialis')->get(),
         ]);
     }
     
-public function kontak($id)
+public function profileD($id)
 {
     $dokter = Dokter::findOrFail($id);
-    return view('kontak', compact('dokter'));
+    return view('profileD', compact('dokter'));
 }
 }
