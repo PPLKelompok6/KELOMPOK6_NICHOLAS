@@ -4,10 +4,11 @@
 @section('content')
 <div class="container mx-auto py-12 px-4 text-center">
     <div class="bg-gray-200 p-8 rounded-xl max-w-xl mx-auto">
-        <img src="{{ $dokter->foto }}" class="w-24 h-24 rounded-full mx-auto mb-4">
+        <img src="{{ asset('storage/' . $dokter->foto) }}" class="mx-auto w-20 h-20 square object-cover mb-4">
         <h2 class="text-xl font-bold">{{ $dokter->nama }}</h2>
         <p class="text-gray-600">{{ $dokter->spesialis }}</p>
         <p class="text-gray-600 mb-4">{{ $dokter->telepon }}</p>
+        <p class="text-gray-600 mb-5">{{ $dokter->deskripsi }}</p>
 
         <p class="mb-4 text-sm text-gray-700">Jadwal Konsultasi:</p>
         <table class="mx-auto mb-4">
@@ -21,5 +22,6 @@
 
         <button class="bg-gray-800 text-white px-4 py-2 rounded-md">Daftar</button>
     </div>
+
 </div>
 @endsection

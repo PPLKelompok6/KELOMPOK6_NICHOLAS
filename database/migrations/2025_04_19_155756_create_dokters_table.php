@@ -23,8 +23,7 @@ return new class extends Migration
             $table->string('rabu')->nullable();
             $table->string('kamis')->nullable();
             $table->string('jumat')->nullable();
-            $table->string('sabtu')->nullable();
-            $table->string('minggu')->nullable();
+            $table->string('deskripsi')->nullable();
             $table->timestamps();
         });
         

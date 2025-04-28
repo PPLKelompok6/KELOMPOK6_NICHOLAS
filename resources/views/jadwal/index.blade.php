@@ -10,7 +10,7 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-12">
         @foreach ($dokterUmum as $dokter)
             <div class="bg-gray-100 p-6 rounded-xl text-center shadow-md">
-                <img src="{{ $dokter->foto }}" alt="{{ $dokter->nama }}" class="mx-auto w-20 h-20 rounded-full object-cover mb-4">
+                <img src="{{ asset('storage/' . $dokter->foto) }}" alt="{{ $dokter->nama }}" class="mx-auto w-20 h-20 square object-cover mb-4">
                 <h3 class="font-bold text-lg">{{ $dokter->nama }}</h3>
                 <p class="text-sm text-gray-600 mb-4">{{ $dokter->spesialis }}</p>
                 <ul class="text-sm text-gray-800 mb-4">
@@ -30,7 +30,7 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-12">
         @foreach ($dokterGigi as $dokter)
             <div class="bg-gray-100 p-6 rounded-xl text-center shadow-md">
-                <img src="{{ $dokter->foto }}" alt="{{ $dokter->nama }}" class="mx-auto w-20 h-20 rounded-full object-cover mb-4">
+                <img src="{{ asset('storage/' . $dokter->foto) }}" alt="{{ $dokter->nama }}" class="mx-auto w-20 h-20 square object-cover mb-4">
                 <h3 class="font-bold text-lg">{{ $dokter->nama }}</h3>
                 <p class="text-sm text-gray-600 mb-4">{{ $dokter->spesialis }}</p>
                 <ul class="text-sm text-gray-800 mb-4">
@@ -50,7 +50,7 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-12">
         @foreach ($psikologi as $dokter)
             <div class="bg-gray-100 p-6 rounded-xl text-center shadow-md">
-                <img src="{{ $dokter->foto }}" alt="{{ $dokter->nama }}" class="mx-auto w-20 h-20 rounded-full object-cover mb-4">
+                <img src="{{ asset('storage/' . $dokter->foto) }}" alt="{{ $dokter->nama }}" class="mx-auto w-20 h-20 square object-cover mb-4">
                 <h3 class="font-bold text-lg">{{ $dokter->nama }}</h3>
                 <p class="text-sm text-gray-600 mb-4">{{ $dokter->spesialis }}</p>
                 <ul class="text-sm text-gray-800 mb-4">
@@ -70,7 +70,7 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-12">
         @foreach ($dokterGigiSpesialis as $dokter)
             <div class="bg-gray-100 p-6 rounded-xl text-center shadow-md">
-                <img src="{{ $dokter->foto }}" alt="{{ $dokter->nama }}" class="mx-auto w-20 h-20 rounded-full object-cover mb-4">
+                <img src="{{ asset('storage/' . $dokter->foto) }}" alt="{{ $dokter->nama }}" class="mx-auto w-20 h-20 square object-cover mb-4">
                 <h3 class="font-bold text-lg">{{ $dokter->nama }}</h3>
                 <p class="text-sm text-gray-600 mb-4">{{ $dokter->spesialis }}</p>
                 <ul class="text-sm text-gray-800 mb-4">

@@ -18,20 +18,17 @@ class Dokter extends Model
         'rabu',
         'kamis',
         'jumat',
-        'sabtu',
-        'minggu',
+        'deskripsi',
     ];
 
     public function getJadwalAttribute()
     {
         return [
-            'senin' => $this->senin,
-            'selasa' => $this->selasa,
-            'rabu' => $this->rabu,
-            'kamis' => $this->kamis,
-            'jumat' => $this->jumat,
-            'sabtu' => $this->sabtu,
-            'minggu' => $this->minggu,
+            'Senin' => $this->senin,
+            'Selasa' => $this->selasa,
+            'Rabu' => $this->rabu,
+            'Kamis' => $this->kamis,
+            'Jumat' => $this->jumat,
         ];
     }
 }
