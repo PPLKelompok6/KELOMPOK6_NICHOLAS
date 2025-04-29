@@ -77,5 +77,3 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/appointments', [AppointmentController::class, 'index'])->name('appointments.index');
     Route::get('/appointments/{appointment}', [AppointmentController::class, 'show'])->name('appointments.show');
 });
-
-// Testing
