@@ -1,4 +1,4 @@
-{{-- resources/views/jadwal.blade.php --}}
+
 @extends('layouts.app')
 
 @section('title', 'Jadwal Dokter')
